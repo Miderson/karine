@@ -1,0 +1,14 @@
+// Menu mobile toggle (se decidir implementar)
+function toggleMenu() {
+  const nav = document.querySelector('.nav');
+  nav.classList.toggle('hidden');
+}
+
+// Confirmação de envio de formulário
+document.querySelectorAll('form').forEach(form => {
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Formulário enviado com sucesso!');
+    form.reset();
+  });
+});
